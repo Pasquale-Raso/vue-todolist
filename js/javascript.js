@@ -17,7 +17,7 @@ const app = new Vue({
       this.tasks.splice(index, 1);
     },
     addTask() {
-      if (this.newTask && this.newTask.trim() !== "") {
+      if (this.newTask && this.newTask.trim()) {
         this.tasks.push(this.newTask);
         this.newTask = "";
       }
