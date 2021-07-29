@@ -19,6 +19,7 @@
       <div class="header"></div>
       <!-- MAIN -->
       <main>
+        <!-- RIQUADRO ALTO -->
         <div class="riquadroalto container">
           <div class="d-flex justify-content-between">
             <div class="adesivo">
@@ -29,18 +30,37 @@
             </div>
             <h2>Spesa</h2>
           </div>
+          <div class="input-group h-50 p-5">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="SCRIVI QUI..."
+              v-model="newTask"
+            />
+            <button
+              class="btn btn-outline-danger"
+              type="button"
+              @click="addTask"
+            >
+              AGGIUNGI
+            </button>
+          </div>
         </div>
-
+        <!-- RIQUADRO BASSO -->
         <div class="container riquadrobasso">
           <div class="separatore">
             <div class="boxlista">
-              <ul>
+              <h3 class="text-center" v-if="!tasks.length">
+                La lista è vuota!
+              </h3>
+              <ul v-else>
                 <li
-                  v-for="task in tasks"
+                  v-for="(task, index) in tasks"
                   class="list-group-item d-flex justify-content-between"
                 >
                   {{task}}
                   <button
+                    @click="deleteTask(index)"
                     type="button"
                     class="btn-close"
                     aria-label="Close"
