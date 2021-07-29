@@ -15,29 +15,52 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header class="header"></header>
-    <main>
-      <div class="riquadroalto container d-flex justify-content-between">
-        <div class="adesivo">
-          <img src="./img/3.png" alt="" />
+    <div id="app">
+      <div class="header"></div>
+      <!-- MAIN -->
+      <main>
+        <div class="riquadroalto container">
+          <div class="d-flex justify-content-between">
+            <div class="adesivo">
+              <img src="./img/3.png" alt="" />
+            </div>
+            <div>
+              <img src="./img/2.jpg" alt="" />
+            </div>
+            <h2>Spesa</h2>
+          </div>
         </div>
-        <div>
-          <img src="./img/2.jpg" alt="" />
-        </div>
-        <h2>Spesa</h2>
-      </div>
 
-      <div class="riquadrobasso container">
-        <div class="adesivo2">
-          <img src="./img/4.png" alt="" />
-        </div>
-        <div class="matita">
-          <img src="./img/5.png" alt="" />
-        </div>
-      </div>
-      </div>
-    </main>
+        <div class="container riquadrobasso">
+          <div class="separatore">
+            <div class="boxlista">
+              <ul>
+                <li
+                  v-for="task in tasks"
+                  class="list-group-item d-flex justify-content-between"
+                >
+                  {{task}}
+                  <button
+                    type="button"
+                    class="btn-close"
+                    aria-label="Close"
+                  ></button>
+                </li>
+              </ul>
+            </div>
 
+            <div>
+              <div class="adesivo2">
+                <img src="./img/4.png" alt="" />
+              </div>
+              <div class="matita">
+                <img src="./img/5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="./js/javascript.js"></script>
   </body>
 </html>

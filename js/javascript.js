@@ -3,6 +3,13 @@ console.log("Ciao", Vue);
 
 const app = new Vue({
   el: "#app",
-  data: {},
+  data: {
+    tasks: [
+      "Compra il latte",
+      "Compra la carne",
+      "Compra il vino",
+      "Compra i biscotti",
+    ],
+  },
   methods: {},
 });

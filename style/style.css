@@ -22,16 +22,24 @@ body {
   margin-top: 40px;
   border-radius: 20px;
 }
-
+.separatore {
+  display: flex;
+  justify-content: flex-end;
+}
 .adesivo {
   margin-top: -20px;
   margin-left: -50px;
 }
 .adesivo2 {
   text-align: right;
-  margin-right: -40px;
+  margin-right: -60px;
 }
 .matita {
   text-align: right;
   margin-right: -90px;
+}
+.boxlista {
+  margin-top: 50px;
+  width: 80%;
+  margin-right: 10px;
 }
