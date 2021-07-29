@@ -1,10 +1,37 @@
 body {
-  background: url(img/1.jpg) no-repeat center center fixed;
+  background-image: url(../img/1.jpg);
   background-size: cover;
+  font-family: cursive;
 }
-
 .header {
-  width: 100%;
+  width: 100vw;
   height: 100px;
   background-color: rgb(51, 102, 153);
+}
+.riquadroalto {
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: -50px;
+  border-radius: 20px;
+}
+.riquadrobasso {
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.adesivo {
+  margin-top: -20px;
+  margin-left: -50px;
+}
+.adesivo2 {
+  text-align: right;
+  margin-right: -40px;
+}
+.matita {
+  text-align: right;
+  margin-right: -90px;
 }
