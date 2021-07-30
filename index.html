@@ -20,6 +20,7 @@
       <!-- MAIN -->
       <main>
         <!-- RIQUADRO ALTO -->
+
         <div class="riquadroalto container">
           <div class="d-flex justify-content-between">
             <div class="adesivo">
@@ -47,35 +48,39 @@
             </button>
           </div>
         </div>
-        <!-- RIQUADRO BASSO -->
-        <div class="container riquadrobasso">
-          <div class="separatore">
-            <div class="boxlista">
-              <h3 class="text-center" v-if="!tasks.length">
-                La lista è vuota!
-              </h3>
-              <ul v-else>
-                <li
-                  v-for="(task, index) in tasks"
-                  class="list-group-item d-flex justify-content-between"
-                >
-                  {{task}}
-                  <button
-                    @click="deleteTask(index)"
-                    type="button"
-                    class="btn-close"
-                    aria-label="Close"
-                  ></button>
-                </li>
-              </ul>
-            </div>
 
-            <div>
-              <div class="adesivo2">
-                <img src="./img/4.png" alt="" />
+        <!-- RIQUADRO BASSO -->
+
+        <div class="container">
+          <div class="riquadrobasso">
+            <div class="separatore">
+              <div class="boxlista">
+                <h3 class="text-center" v-if="!tasks.length">
+                  La lista è vuota!
+                </h3>
+                <ul v-else>
+                  <li
+                    v-for="(task, index) in tasks"
+                    class="list-group-item d-flex justify-content-between"
+                  >
+                    {{task}}
+                    <button
+                      @click="deleteTask(index)"
+                      type="button"
+                      class="btn-close"
+                      aria-label="Close"
+                    ></button>
+                  </li>
+                </ul>
               </div>
-              <div class="matita">
-                <img src="./img/5.png" alt="" />
+
+              <div>
+                <div class="adesivo2">
+                  <img src="./img/4.png" alt="" />
+                </div>
+                <div class="matita">
+                  <img src="./img/5.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
