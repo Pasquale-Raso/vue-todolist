@@ -36,6 +36,7 @@
               class="form-control"
               placeholder="SCRIVI QUI..."
               v-model="newTask"
+              @keyup.enter="addTask"
             />
             <button
               class="btn btn-outline-danger"
